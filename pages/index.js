@@ -6,13 +6,20 @@ import NavBar from '../components/navBar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  return (
-    <div>
-      <h1 className={styles.title}>Home Page</h1>
-      <p className={styles.text}>A home page is a webpage that serves as the starting point of website. It is the default webpage that loads when you visit a web address that only contains a domain name. For example, visiting https://techterms.com will display the Tech Terms home page. The home page is located in the root directory of a website.</p>
-      <Link href="/food">
-        <a className={styles.btn}>See lsit of food</a>
-      </Link>
-    </div>
-  )
+    return ( 
+        <>
+            <Head>
+                <title>Panda Page | Home</title>
+                <meta name="keywords" content="panda"/>
+            </Head>
+            <div>
+                <h1 className={styles.title}>Homepage</h1>
+                <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
+                <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
+                <Link href="/ninjas/">
+                <a className={styles.btn}>See Panda Listing</a>
+                </Link>
+            </div>
+        </>
+    )
 }
